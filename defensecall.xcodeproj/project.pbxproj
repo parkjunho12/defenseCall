@@ -3,13 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		32CE01193654504376C3DE71 /* Pods_defensecall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D434968C6B5A5467FBFD7C /* Pods_defensecall.framework */; };
 		341FB0618AED0D37182EAE9F /* Pods_defensecallTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D694D4EB6924EF0F3C09BF27 /* Pods_defensecallTests.framework */; };
 		8DFF2F978F5BC65DF5A81BB7 /* Pods_defensecall_defensecallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD3ADF40F510F43D16DBE3 /* Pods_defensecall_defensecallUITests.framework */; };
+		D2347A872588A8A500D1F76F /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2347A862588A8A500D1F76F /* NumberView.swift */; };
+		D2347A8C2588A98600D1F76F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2347A8B2588A98600D1F76F /* SearchBar.swift */; };
+		D2AF786925899FB800A00252 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF786825899FB800A00252 /* CallDirectoryHandler.swift */; };
+		D2AF786D25899FB800A00252 /* defensecall_callkit.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2AF786625899FB800A00252 /* defensecall_callkit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2AF787725899FF100A00252 /* CallkitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF787625899FF100A00252 /* CallkitModel.swift */; };
+		D2AF788B2589B1EB00A00252 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF788A2589B1EB00A00252 /* DetailView.swift */; };
+		D2AF78962589BA7C00A00252 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF78952589BA7C00A00252 /* Utils.swift */; };
+		D2AF78AB2589CCBB00A00252 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF78AA2589CCBB00A00252 /* SettingView.swift */; };
+		D2AF78CF2589DF3000A00252 /* PopupCallSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF78CE2589DF3000A00252 /* PopupCallSetting.swift */; };
+		D2AF78D92589E3E400A00252 /* CallkitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF78D82589E3E400A00252 /* CallkitModel.swift */; };
+		D2AF78E52589F0BC00A00252 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF78E42589F0BC00A00252 /* CallDirectoryHandler.swift */; };
+		D2AF78E92589F0BC00A00252 /* defensecall_secondCallkit.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2AF78E22589F0BC00A00252 /* defensecall_secondCallkit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D2B0250E2587457A00DC718E /* defensecallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B0250D2587457A00DC718E /* defensecallApp.swift */; };
 		D2B025102587457A00DC718E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B0250F2587457A00DC718E /* ContentView.swift */; };
 		D2B025122587457D00DC718E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2B025112587457D00DC718E /* Assets.xcassets */; };
@@ -19,6 +31,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D2AF786B25899FB800A00252 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2B025022587457A00DC718E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AF786525899FB800A00252;
+			remoteInfo = defensecall_callkit;
+		};
+		D2AF78E72589F0BC00A00252 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2B025022587457A00DC718E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AF78E12589F0BC00A00252;
+			remoteInfo = defensecall_secondCallkit;
+		};
 		D2B0251C2587457E00DC718E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D2B025022587457A00DC718E /* Project object */;
@@ -35,6 +61,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D2AF787125899FB800A00252 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D2AF78E92589F0BC00A00252 /* defensecall_secondCallkit.appex in Embed App Extensions */,
+				D2AF786D25899FB800A00252 /* defensecall_callkit.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		095F382AF19C88DB46B5BB44 /* Pods-defensecall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defensecall.debug.xcconfig"; path = "Target Support Files/Pods-defensecall/Pods-defensecall.debug.xcconfig"; sourceTree = "<group>"; };
 		41D434968C6B5A5467FBFD7C /* Pods_defensecall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defensecall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +84,20 @@
 		85E2AC345C8C176623A60F86 /* Pods-defensecallTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defensecallTests.debug.xcconfig"; path = "Target Support Files/Pods-defensecallTests/Pods-defensecallTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A40FBB12718BE3D41A86C3AF /* Pods-defensecall-defensecallUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defensecall-defensecallUITests.release.xcconfig"; path = "Target Support Files/Pods-defensecall-defensecallUITests/Pods-defensecall-defensecallUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CB6B601F397729E9D4A85DB5 /* Pods-defensecall-defensecallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defensecall-defensecallUITests.debug.xcconfig"; path = "Target Support Files/Pods-defensecall-defensecallUITests/Pods-defensecall-defensecallUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2347A862588A8A500D1F76F /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		D2347A8B2588A98600D1F76F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		D2AF786625899FB800A00252 /* defensecall_callkit.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = defensecall_callkit.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AF786825899FB800A00252 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		D2AF786A25899FB800A00252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2AF787625899FF100A00252 /* CallkitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallkitModel.swift; sourceTree = "<group>"; };
+		D2AF788A2589B1EB00A00252 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D2AF78952589BA7C00A00252 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D2AF78AA2589CCBB00A00252 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		D2AF78CE2589DF3000A00252 /* PopupCallSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupCallSetting.swift; sourceTree = "<group>"; };
+		D2AF78D82589E3E400A00252 /* CallkitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallkitModel.swift; sourceTree = "<group>"; };
+		D2AF78E22589F0BC00A00252 /* defensecall_secondCallkit.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = defensecall_secondCallkit.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AF78E42589F0BC00A00252 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		D2AF78E62589F0BC00A00252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2B0250A2587457A00DC718E /* defensecall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = defensecall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B0250D2587457A00DC718E /* defensecallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = defensecallApp.swift; sourceTree = "<group>"; };
 		D2B0250F2587457A00DC718E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +115,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D2AF786325899FB800A00252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AF78DF2589F0BC00A00252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2B025072587457A00DC718E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,8 +166,87 @@
 				85E2AC345C8C176623A60F86 /* Pods-defensecallTests.debug.xcconfig */,
 				495C5976A36FDE96F9CF4A64 /* Pods-defensecallTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D2AF784925899B8D00A00252 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF78CD2589DF1D00A00252 /* Popup */,
+				D2AF789F2589CC9700A00252 /* Setting */,
+				D2AF78892589B1DE00A00252 /* Detail */,
+				D2AF785525899D9C00A00252 /* Main */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D2AF784A25899BA600A00252 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF78D82589E3E400A00252 /* CallkitModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2AF785525899D9C00A00252 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D2B0250F2587457A00DC718E /* ContentView.swift */,
+				D2347A862588A8A500D1F76F /* NumberView.swift */,
+				D2347A8B2588A98600D1F76F /* SearchBar.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D2AF786725899FB800A00252 /* defensecall_callkit */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF786825899FB800A00252 /* CallDirectoryHandler.swift */,
+				D2AF786A25899FB800A00252 /* Info.plist */,
+				D2AF787625899FF100A00252 /* CallkitModel.swift */,
+			);
+			path = defensecall_callkit;
+			sourceTree = "<group>";
+		};
+		D2AF78892589B1DE00A00252 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF788A2589B1EB00A00252 /* DetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		D2AF78942589BA6D00A00252 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF78952589BA7C00A00252 /* Utils.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D2AF789F2589CC9700A00252 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF78AA2589CCBB00A00252 /* SettingView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		D2AF78CD2589DF1D00A00252 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF78CE2589DF3000A00252 /* PopupCallSetting.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		D2AF78E32589F0BC00A00252 /* defensecall_secondCallkit */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF78E42589F0BC00A00252 /* CallDirectoryHandler.swift */,
+				D2AF78E62589F0BC00A00252 /* Info.plist */,
+			);
+			path = defensecall_secondCallkit;
 			sourceTree = "<group>";
 		};
 		D2B025012587457A00DC718E = {
@@ -107,6 +255,8 @@
 				D2B0250C2587457A00DC718E /* defensecall */,
 				D2B0251E2587457E00DC718E /* defensecallTests */,
 				D2B025292587457E00DC718E /* defensecallUITests */,
+				D2AF786725899FB800A00252 /* defensecall_callkit */,
+				D2AF78E32589F0BC00A00252 /* defensecall_secondCallkit */,
 				D2B0250B2587457A00DC718E /* Products */,
 				3F64307E55E7C7158AC87762 /* Pods */,
 				DC26499BCF95C475F2B6ADAF /* Frameworks */,
@@ -119,6 +269,8 @@
 				D2B0250A2587457A00DC718E /* defensecall.app */,
 				D2B0251B2587457E00DC718E /* defensecallTests.xctest */,
 				D2B025262587457E00DC718E /* defensecallUITests.xctest */,
+				D2AF786625899FB800A00252 /* defensecall_callkit.appex */,
+				D2AF78E22589F0BC00A00252 /* defensecall_secondCallkit.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,8 +278,10 @@
 		D2B0250C2587457A00DC718E /* defensecall */ = {
 			isa = PBXGroup;
 			children = (
+				D2AF78942589BA6D00A00252 /* Common */,
+				D2AF784A25899BA600A00252 /* Model */,
+				D2AF784925899B8D00A00252 /* UI */,
 				D2B0250D2587457A00DC718E /* defensecallApp.swift */,
-				D2B0250F2587457A00DC718E /* ContentView.swift */,
 				D2B025112587457D00DC718E /* Assets.xcassets */,
 				D2B025162587457D00DC718E /* Info.plist */,
 				D2B025132587457D00DC718E /* Preview Content */,
@@ -174,6 +328,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D2AF786525899FB800A00252 /* defensecall_callkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2AF786E25899FB800A00252 /* Build configuration list for PBXNativeTarget "defensecall_callkit" */;
+			buildPhases = (
+				D2AF786225899FB800A00252 /* Sources */,
+				D2AF786325899FB800A00252 /* Frameworks */,
+				D2AF786425899FB800A00252 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = defensecall_callkit;
+			productName = defensecall_callkit;
+			productReference = D2AF786625899FB800A00252 /* defensecall_callkit.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D2AF78E12589F0BC00A00252 /* defensecall_secondCallkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2AF78EA2589F0BC00A00252 /* Build configuration list for PBXNativeTarget "defensecall_secondCallkit" */;
+			buildPhases = (
+				D2AF78DE2589F0BC00A00252 /* Sources */,
+				D2AF78DF2589F0BC00A00252 /* Frameworks */,
+				D2AF78E02589F0BC00A00252 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = defensecall_secondCallkit;
+			productName = defensecall_secondCallkit;
+			productReference = D2AF78E22589F0BC00A00252 /* defensecall_secondCallkit.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D2B025092587457A00DC718E /* defensecall */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2B0252F2587457E00DC718E /* Build configuration list for PBXNativeTarget "defensecall" */;
@@ -183,10 +371,13 @@
 				D2B025072587457A00DC718E /* Frameworks */,
 				D2B025082587457A00DC718E /* Resources */,
 				4640D716A299D4A2059C6192 /* [CP] Embed Pods Frameworks */,
+				D2AF787125899FB800A00252 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D2AF786C25899FB800A00252 /* PBXTargetDependency */,
+				D2AF78E82589F0BC00A00252 /* PBXTargetDependency */,
 			);
 			name = defensecall;
 			productName = defensecall;
@@ -241,6 +432,12 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					D2AF786525899FB800A00252 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					D2AF78E12589F0BC00A00252 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					D2B025092587457A00DC718E = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -270,11 +467,27 @@
 				D2B025092587457A00DC718E /* defensecall */,
 				D2B0251A2587457E00DC718E /* defensecallTests */,
 				D2B025252587457E00DC718E /* defensecallUITests */,
+				D2AF786525899FB800A00252 /* defensecall_callkit */,
+				D2AF78E12589F0BC00A00252 /* defensecall_secondCallkit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D2AF786425899FB800A00252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AF78E02589F0BC00A00252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2B025082587457A00DC718E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,12 +617,36 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D2AF786225899FB800A00252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2AF787725899FF100A00252 /* CallkitModel.swift in Sources */,
+				D2AF786925899FB800A00252 /* CallDirectoryHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AF78DE2589F0BC00A00252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2AF78E52589F0BC00A00252 /* CallDirectoryHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2B025062587457A00DC718E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D2B025102587457A00DC718E /* ContentView.swift in Sources */,
+				D2347A8C2588A98600D1F76F /* SearchBar.swift in Sources */,
 				D2B0250E2587457A00DC718E /* defensecallApp.swift in Sources */,
+				D2AF78AB2589CCBB00A00252 /* SettingView.swift in Sources */,
+				D2AF788B2589B1EB00A00252 /* DetailView.swift in Sources */,
+				D2AF78D92589E3E400A00252 /* CallkitModel.swift in Sources */,
+				D2347A872588A8A500D1F76F /* NumberView.swift in Sources */,
+				D2AF78962589BA7C00A00252 /* Utils.swift in Sources */,
+				D2AF78CF2589DF3000A00252 /* PopupCallSetting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +669,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D2AF786C25899FB800A00252 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AF786525899FB800A00252 /* defensecall_callkit */;
+			targetProxy = D2AF786B25899FB800A00252 /* PBXContainerItemProxy */;
+		};
+		D2AF78E82589F0BC00A00252 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AF78E12589F0BC00A00252 /* defensecall_secondCallkit */;
+			targetProxy = D2AF78E72589F0BC00A00252 /* PBXContainerItemProxy */;
+		};
 		D2B0251D2587457E00DC718E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2B025092587457A00DC718E /* defensecall */;
@@ -445,8 +692,89 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D2AF786F25899FB800A00252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U45L4UHSF2;
+				INFOPLIST_FILE = defensecall_callkit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "datau.defensecall.defensecall-callkit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2AF787025899FB800A00252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U45L4UHSF2;
+				INFOPLIST_FILE = defensecall_callkit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "datau.defensecall.defensecall-callkit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2AF78EB2589F0BC00A00252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U45L4UHSF2;
+				INFOPLIST_FILE = defensecall_secondCallkit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "datau.defensecall.defensecall-secondCallkit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2AF78EC2589F0BC00A00252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U45L4UHSF2;
+				INFOPLIST_FILE = defensecall_secondCallkit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "datau.defensecall.defensecall-secondCallkit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D2B0252D2587457E00DC718E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 095F382AF19C88DB46B5BB44 /* Pods-defensecall.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -508,6 +836,7 @@
 		};
 		D2B0252E2587457E00DC718E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5AB216BE56C360BD53BA228 /* Pods-defensecall.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -565,6 +894,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 095F382AF19C88DB46B5BB44 /* Pods-defensecall.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -588,6 +918,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E5AB216BE56C360BD53BA228 /* Pods-defensecall.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -698,6 +1029,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D2AF786E25899FB800A00252 /* Build configuration list for PBXNativeTarget "defensecall_callkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2AF786F25899FB800A00252 /* Debug */,
+				D2AF787025899FB800A00252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2AF78EA2589F0BC00A00252 /* Build configuration list for PBXNativeTarget "defensecall_secondCallkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2AF78EB2589F0BC00A00252 /* Debug */,
+				D2AF78EC2589F0BC00A00252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D2B025052587457A00DC718E /* Build configuration list for PBXProject "defensecall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
